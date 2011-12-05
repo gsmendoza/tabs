@@ -11,8 +11,14 @@ p = { f,4 f c c }
   \new StaffGroup <<
     \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
       \clef "treble_8"
-      \new Voice = "1" { \voiceOne \relative c'' { \ima } }
-      \new Voice = "2" { \voiceTwo \relative c'  { \p   } }
+      \new Voice = "1" { \voiceOne \relative c'' {
+        \transposition d''
+        \ima
+      } }
+      \new Voice = "2" { \voiceTwo \relative c'  {
+        \transposition d'
+        \p
+      } }
     >>
 
     \new TabStaff <<
@@ -21,7 +27,8 @@ p = { f,4 f c c }
     >>
   >>
 
-  \midi { }
+  \midi {
+  }
   \layout {
     \context {
       \TabVoice
