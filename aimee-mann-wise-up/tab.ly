@@ -11,19 +11,20 @@ p = { f,4 f c c }
   \new StaffGroup <<
     \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
       \clef "treble_8"
-      \new Voice = "1" { \voiceOne \relative c'' {
+      \relative c'' {
         \transposition d''
         \ima
-      } }
-      \new Voice = "2" { \voiceTwo \relative c'  {
+      }
+      \\
+      \relative c'  {
         \transposition d'
         \p
-      } }
+      }
     >>
 
     \new TabStaff <<
-      \new TabVoice \relative c'' { \ima }
-      \new TabVoice \relative c'  { \p }
+      \relative c'' { \ima }
+      \relative c'  { \p }
     >>
   >>
 
@@ -31,8 +32,7 @@ p = { f,4 f c c }
   }
   \layout {
     \context {
-      \TabVoice
-      \remove Stem_engraver
+      \TabVoice \remove Stem_engraver
     }
   }
 }
