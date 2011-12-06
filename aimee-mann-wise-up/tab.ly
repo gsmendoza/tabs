@@ -3,9 +3,12 @@
 
 \header { }
 
-ima = { g4 g e e }
+\parallelMusic #'(ima p){
+  % Bar 1
+  g4 g e e  |
+  f,4 f c c |
+}
 
-p = { f,4 f c c }
 
 \score {
   \new StaffGroup <<
