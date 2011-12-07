@@ -3,31 +3,33 @@
 
 \header { }
 
-\parallelMusic #'(ima p){
-  % Bar 1
-  g4 g e e  |
-  f,4 f c c |
-}
+tBarIntro = \relative c'' { g4              g8.           g8.           e4.                 }
 
+bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8  }
+
+treble = {  \tBarIntro  \tBarIntro }
+  bass = {  \bBarIntro  \bBarIntro}
 
 \score {
   \new StaffGroup <<
     \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
+      \tempo 4 = 75
       \clef "treble_8"
-      \relative c'' {
+      \new Voice {
+        \voiceOne
         \transposition d''
-        \ima
+        \treble
       }
-      \\
-      \relative c'  {
+      \new Voice {
+        \voiceTwo
         \transposition d'
-        \p
+        \bass
       }
     >>
 
     \new TabStaff <<
-      \relative c'' { \ima }
-      \relative c'  { \p }
+      \relative c'' { \treble }
+      \relative c'  { \bass }
     >>
   >>
 
@@ -35,7 +37,10 @@
   }
   \layout {
     \context {
-      \TabVoice \remove Stem_engraver
+      \TabVoice
+        \remove Dots_engraver
+        \remove Stem_engraver
+        \remove Rest_engraver
     }
   }
 }
