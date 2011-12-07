@@ -7,8 +7,15 @@ tBarIntro = \relative c'' { g4              g8.           g8.           e4.     
 
 bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8  }
 
-treble = {  \repeat volta 4 { \tBarIntro } }
-  bass = {  \repeat volta 4 { \bBarIntro } }
+treble = {
+  \transposition d''
+  \repeat volta 4 { \tBarIntro }
+}
+
+bass = {
+  \transposition d'
+  \repeat volta 4 { \bBarIntro }
+}
 
 \score {
   \new StaffGroup <<
@@ -17,12 +24,10 @@ treble = {  \repeat volta 4 { \tBarIntro } }
       \clef "treble_8"
       \new Voice {
         \voiceOne
-        \transposition d''
         \treble
       }
       \new Voice {
         \voiceTwo
-        \transposition d'
         \bass
       }
     >>
@@ -50,13 +55,11 @@ treble = {  \repeat volta 4 { \tBarIntro } }
 
     \new Voice {
       \unfoldRepeats {
-        \transposition d''
         \treble
       }
     }
     \new Voice {
       \unfoldRepeats {
-        \transposition d'
         \bass
       }
     }
