@@ -33,8 +33,8 @@ bass = {
     >>
 
     \new TabStaff <<
-      \relative c'' { \treble }
-      \relative c'  { \bass }
+      \treble
+      \bass
     >>
   >>
 
