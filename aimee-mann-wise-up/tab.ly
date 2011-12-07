@@ -7,12 +7,12 @@ tBarIntro = \relative c'' { g4              g8.           g8.           e4.     
 
 bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8  }
 
-treble = {  \tBarIntro  \tBarIntro }
-  bass = {  \bBarIntro  \bBarIntro}
+treble = {  \repeat volta 4 { \tBarIntro } }
+  bass = {  \repeat volta 4 { \bBarIntro } }
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
+    \new Staff <<
       \tempo 4 = 75
       \clef "treble_8"
       \new Voice {
@@ -33,8 +33,6 @@ treble = {  \tBarIntro  \tBarIntro }
     >>
   >>
 
-  \midi {
-  }
   \layout {
     \context {
       \TabVoice
@@ -43,4 +41,26 @@ treble = {  \tBarIntro  \tBarIntro }
         \remove Rest_engraver
     }
   }
+}
+
+\score {
+  \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
+    \tempo 4 = 75
+    \clef "treble_8"
+
+    \new Voice {
+      \unfoldRepeats {
+        \transposition d''
+        \treble
+      }
+    }
+    \new Voice {
+      \unfoldRepeats {
+        \transposition d'
+        \bass
+      }
+    }
+  >>
+
+  \midi {}
 }
