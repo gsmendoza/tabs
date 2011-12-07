@@ -3,18 +3,28 @@
 
 \header { }
 
-tBarIntro = \relative c'' { g4              g8.           g8.           e4.                 }
+tBarIntro = \relative c'' { g4              g8.           g8.           e4.                       }
+bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8        }
 
-bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8  }
+tBarRiffA = \relative c'' { r8      g4              r16   g8.           e4.                       }
+bBarRiffA = \relative c'  { f,4             f8      a8      c16   g16   e4              g16   d16 }
+
+tIntro = { \repeat volta 4 { \tBarIntro } }
+tVerse = { \tBarRiffA }
+
+bIntro = { \repeat volta 4 { \bBarIntro } }
+bVerse = { \bBarRiffA }
 
 treble = {
   \transposition d''
-  \repeat volta 4 { \tBarIntro }
+  \tIntro
+  \tVerse
 }
 
 bass = {
   \transposition d'
-  \repeat volta 4 { \bBarIntro }
+  \bIntro
+  \bVerse
 }
 
 \score {
