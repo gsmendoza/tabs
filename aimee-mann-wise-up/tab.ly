@@ -58,6 +58,7 @@ bass = {
   }
 }
 
+% showLastLength = R1*2 % Enable to play only last two measures
 \score {
   \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
     \tempo 4 = 75
