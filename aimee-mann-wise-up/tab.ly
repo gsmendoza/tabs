@@ -12,11 +12,14 @@ bBarRiffA = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 tBarRiffB = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
 bBarRiffB = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 
+tBarVerseAm = { <e'\1>8 <d'\2>16 <c'\2>8 <a\3>8. <c'\2>4 <a\3>8 <c'\2>8 }
+bBarVerseAm = { <a,\5>4 <a,\5>8 <e\4>4 <a,\5>4 \skip 8  }
+
 tIntro = { \repeat volta 4 { \tBarIntro } }
-tVerse = { \tBarRiffA \tBarRiffB }
+tVerse = { \tBarRiffA \tBarRiffB \tBarVerseAm }
 
 bIntro = { \repeat volta 4 { \bBarIntro } }
-bVerse = { \bBarRiffA \bBarRiffB }
+bVerse = { \bBarRiffA \bBarRiffB \bBarVerseAm }
 
 treble = {
   \transposition d''
