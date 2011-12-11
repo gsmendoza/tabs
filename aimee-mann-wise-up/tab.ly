@@ -6,14 +6,17 @@
 tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 \skip 8 }
 bBarIntro = { <f\4>4 <f\4>4 <c\5>8 r8 <e\4>8 <g\3>8  }
 
-tBarRiffA = \relative c'' { r8      g4              r16   g8.           e4.                       }
-bBarRiffA = \relative c'  { f,4             f8      a8      c16   g16   e4              g16   d16 }
+tBarRiffA = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
+bBarRiffA = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+
+tBarRiffB = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarRiffB = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 
 tIntro = { \repeat volta 4 { \tBarIntro } }
-tVerse = { \tBarRiffA }
+tVerse = { \tBarRiffA \tBarRiffB }
 
 bIntro = { \repeat volta 4 { \bBarIntro } }
-bVerse = { \bBarRiffA }
+bVerse = { \bBarRiffA \bBarRiffB }
 
 treble = {
   \transposition d''
@@ -43,8 +46,14 @@ bass = {
     >>
 
     \new TabStaff <<
-      \treble
-      \bass
+      \new TabVoice {
+        \slurUp
+        \treble
+      }
+      \new TabVoice {
+        \slurUp
+        \bass
+      }
     >>
   >>
 
@@ -53,15 +62,18 @@ bass = {
       \override TimeSignature #'style = #'numbered
       \override StringNumber #'transparent = ##t
     }
+    \context { \TabStaff
+      \override TimeSignature #'style = #'numbered
+    }
     \context { \TabVoice
-        \remove Dots_engraver
-        \remove Stem_engraver
-        \remove Rest_engraver
+      \remove Dots_engraver
+      \remove Stem_engraver
+      \remove Rest_engraver
     }
   }
 }
 
-% showLastLength = R1*2 % Enable to play only last two measures
+showLastLength = R1*2 % Enable to play only last two measures
 \score {
   \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
     \tempo 4 = 75
