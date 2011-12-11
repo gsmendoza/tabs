@@ -19,21 +19,21 @@ tBarBeganIt = { \skip 4 <a\3 c'\2 >8 <g\3>8 \skip 4 <g\3 c'\2 >8 <g\3>8  }
 bBarBeganIt = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
 
 tIntro = { \repeat volta 2 { \tBarIntro \tBarIntro } }
-tVerse = { \tBarYouveGot \tBarWhatYouWant \tBarWhenYouFirst \tBarBeganIt }
+tLineOne = { \tBarYouveGot \tBarWhatYouWant \tBarWhenYouFirst \tBarBeganIt }
 
 bIntro = { \repeat volta 2 { \bBarIntro \bBarIntro } }
-bVerse = { \bBarYouveGot \bBarWhatYouWant \bBarWhenYouFirst \bBarBeganIt }
+bLineOne = { \bBarYouveGot \bBarWhatYouWant \bBarWhenYouFirst \bBarBeganIt }
 
 treble = {
   \transposition d''
   \tIntro
-  \tVerse
+  \tLineOne
 }
 
 bass = {
   \transposition d'
   \bIntro
-  \bVerse
+  \bLineOne
 }
 
 \score {
