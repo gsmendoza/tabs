@@ -3,8 +3,8 @@
 
 \header { }
 
-tBarIntro = \relative c'' { g4              g8.           g8.           e4.                       }
-bBarIntro = \relative c'  { f,8     a8      f8      a8      c16   g16   e4              g8        }
+tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 \skip 8 }
+bBarIntro = { <f\4>4 <f\4>4 <c\5>8 r8 <e\4>8 <g\3>8  }
 
 tBarRiffA = \relative c'' { r8      g4              r16   g8.           e4.                       }
 bBarRiffA = \relative c'  { f,4             f8      a8      c16   g16   e4              g16   d16 }
@@ -49,8 +49,11 @@ bass = {
   >>
 
   \layout {
-    \context {
-      \TabVoice
+    \context { \Staff
+      \override TimeSignature #'style = #'numbered
+      \override StringNumber #'transparent = ##t
+    }
+    \context { \TabVoice
         \remove Dots_engraver
         \remove Stem_engraver
         \remove Rest_engraver
