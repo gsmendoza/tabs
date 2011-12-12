@@ -2,7 +2,7 @@
 \include "english.ly"
 
 \paper {
-   indent = #0
+ indent = #0
 }
 
 \header {
@@ -13,6 +13,9 @@
 }
 
 %-----------------------------------------------------------------------
+
+tBarBeforeYouSign = { r8 <d'\2>16 <c'\2>8. <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <g\3>8  }
+bBarBeforeYouSign = { <d\4>4 <d\4>4 <d\4>4 <d\4>4 }
 
 tBarBeganIt = { \skip 4 <a\3 c'\2 >8 <g\3>8 \skip 4 <g\3 c'\2 >8 <g\3>8  }
 bBarBeganIt = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
@@ -34,6 +37,9 @@ bBarItsNotGoingToStop = { <f\4>4 <f\4>4 <d\4>4 <d\4>4  }
 
 tBarItsNotGoingToStopCCGE = { <g'\1>8 <g\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <d'\2>4 <c'\2>8  }
 bBarItsNotGoingToStopCCGE = { <c\5>4 <c\5>4 <g,\6>4 <e,\6>4  }
+
+tBarPrepareAList = { <e'\1>8 <d'\2>16( <c'\2>8.) <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <a\3>16 <e'\1>16 }
+bBarPrepareAList = { <a,\5>4 <a,\5>4 <a,\5>4 <a,\5>4 }
 
 tBarTheresACure = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8   }
 bBarTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
@@ -77,34 +83,49 @@ tChorusOneLineTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUp \tBarIntro \t
 bChorusOneLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
 
 tChorusTwoLineTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUpFour \tBarIntro \tBarIntro \break }
-bChorusTwoLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUpFour \bBarIntro \bBarIntro \break  }
+bChorusTwoLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUpFour \bBarIntro \bBarIntro \break }
+
+tBridge = { \tBarPrepareAList \tBarBeforeYouSign \break }
+bBridge = { \bBarPrepareAList \bBarBeforeYouSign \break }
 
 %-----------------------------------------------------------------------
 
 treble = {
   \transposition d''
   \tIntro
+
   \tVerseOneLineOne
   \tVerseOneLineTwo
+
   \tChorusOneLineOne
   \tChorusOneLineTwo
+
   \tVerseTwoLineOne
   \tVerseOneLineTwo
+
   \tChorusOneLineOne
   \tChorusTwoLineTwo
+
+  \tBridge
 }
 
 bass = {
   \transposition d'
   \bIntro
+
   \bVerseOneLineOne
   \bVerseOneLineTwo
+
   \bChorusOneLineOne
   \bChorusOneLineTwo
+
   \bVerseTwoLineOne
   \bVerseOneLineTwo
+
   \bChorusOneLineOne
   \bChorusTwoLineTwo
+
+  \bBridge
 }
 
 \score {
