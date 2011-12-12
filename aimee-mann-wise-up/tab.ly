@@ -36,6 +36,12 @@ bBarItsNotGoingToStop = { <f\4>4 <f\4>4 <d\4>4 <d\4>4  }
 tBarFDm = { r8 <a\3>8 <c'\2>8 <a\3>8 r8 <d'\2>8 <a\3>8 <e'\1>8 }
 bBarFDm = { <f\4>4 <f\4>4 <d\4>2 }
 
+tBarItsNotGoingToStopCCGE = { <g'\1>8 <g\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <d'\2>4 <c'\2>8  }
+bBarItsNotGoingToStopCCGE = { <c\5>4 <c\5>4 <g,\6>4 <e,\6>4  }
+
+tBarTilYouWiseUp = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>4 <a\3>4   }
+bBarTilYouWiseUp = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
+
 %-----------------------------------------------------------------------
 
 tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
@@ -50,6 +56,10 @@ bLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough 
 tChorusOne = { \tBarItsNotGoingToStop \tBarFDm \tBarItsNotGoingToStop \tBarFDm  \break }
 bChorusOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bBarFDm  \break }
 
+tChorusTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUp \tBarIntro \tBarIntro \break }
+bChorusTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
+
+
 
 %-----------------------------------------------------------------------
 
@@ -59,6 +69,7 @@ treble = {
   \tLineOne
   \tLineTwo
   \tChorusOne
+  \tChorusTwo
 }
 
 bass = {
@@ -67,6 +78,7 @@ bass = {
   \bLineOne
   \bLineTwo
   \bChorusOne
+  \bChorusTwo
 }
 
 \score {
