@@ -1,6 +1,10 @@
 \version "2.12.3"
 \include "english.ly"
 
+\paper {
+   indent = #0
+}
+
 \header {
   title = "Aimee Mann - Wise Up"
   composer = "Tabbed by George Mendoza"
