@@ -1,2 +1,4 @@
 .~lock*
+*.bak
+*.ps
 docs/*
