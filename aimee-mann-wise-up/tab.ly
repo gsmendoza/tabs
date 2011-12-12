@@ -47,8 +47,8 @@ bBarTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
 tBarTilYouWiseUp = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>4 <a\3>4   }
 bBarTilYouWiseUp = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
 
-tBarTilYouWiseUpFour = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>8 <a\3>8 r8 <c'\2>8 }
-bBarTilYouWiseUpFour = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
+tBarTilYouWiseUpTwo = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>8 <a\3>8 r8 <c'\2>8 }
+bBarTilYouWiseUpTwo = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
 
 tBarWhatYouThought = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
 bBarWhatYouThought = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
@@ -82,8 +82,8 @@ bChorusOneLineOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bB
 tChorusOneLineTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUp \tBarIntro \tBarIntro \break }
 bChorusOneLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
 
-tChorusTwoLineTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUpFour \tBarIntro \tBarIntro \break }
-bChorusTwoLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUpFour \bBarIntro \bBarIntro \break }
+tChorusTwoLineTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUpTwo \tBarIntro \tBarIntro \break }
+bChorusTwoLineTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUpTwo \bBarIntro \bBarIntro \break }
 
 tBridge = { \tBarPrepareAList \tBarBeforeYouSign \break }
 bBridge = { \bBarPrepareAList \bBarBeforeYouSign \break }
