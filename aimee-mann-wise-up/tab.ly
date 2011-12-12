@@ -30,16 +30,26 @@ bBarYouGot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 tBarEndItThough = { r8 <d'\2>16( <c'\2>16) r8 <a\3>16 <c'\2>16 r8 <d'\2>16( <c'\2>16) r8 <a\3>8 }
 bBarEndItThough = { <f\4>4 <f\4>4 <d\4>4 <d\4>4 }
 
+tBarItsNotGoingToStop = { <g'\1>8 <a\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <e'\2>4 <d'\2>16( <c'\2>16)  }
+bBarItsNotGoingToStop = { <f\4>4 <f\4>4 <d\4>4 <d\4>4  }
+
+tBarFDm = { r8 <a\3>8 <c'\2>8 <a\3>8 r8 <d'\2>8 <a\3>8 <e'\1>8 }
+bBarFDm = { <f\4>4 <f\4>4 <d\4>2 }
+
 %-----------------------------------------------------------------------
 
-tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro  \break }
-bIntro = { \bBarIntro \bBarIntro \bBarIntro \bBarIntro  \break }
+tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
+bIntro = { \bBarIntro \bBarIntro \bBarIntro \bBarIntro \break }
 
-tLineOne = { \tBarItsNot \tBarWhatYouThought \tBarWhenYouFirst \tBarBeganIt  \break }
-bLineOne = { \bBarItsNot \bBarWhatYouThought \bBarWhenYouFirst \bBarBeganIt  \break }
+tLineOne = { \tBarItsNot \tBarWhatYouThought \tBarWhenYouFirst \tBarBeganIt \break }
+bLineOne = { \bBarItsNot \bBarWhatYouThought \bBarWhenYouFirst \bBarBeganIt \break }
 
-tLineTwo = { \tBarYouGot \tBarWhatYouThought \tBarWhenYouFirst \tBarEndItThough  \break }
-bLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough  \break }
+tLineTwo = { \tBarYouGot \tBarWhatYouThought \tBarWhenYouFirst \tBarEndItThough \break }
+bLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough \break }
+
+tChorusOne = { \tBarItsNotGoingToStop \tBarFDm \tBarItsNotGoingToStop \tBarFDm  \break }
+bChorusOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bBarFDm  \break }
+
 
 %-----------------------------------------------------------------------
 
@@ -48,6 +58,7 @@ treble = {
   \tIntro
   \tLineOne
   \tLineTwo
+  \tChorusOne
 }
 
 bass = {
@@ -55,6 +66,7 @@ bass = {
   \bIntro
   \bLineOne
   \bLineTwo
+  \bChorusOne
 }
 
 \score {
@@ -100,7 +112,7 @@ bass = {
   }
 }
 
-showLastLength = R1*2 % Enable to play only last two measures
+showLastLength = R1*4 % Enable to play only last two measures
 \score {
   \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
     \tempo 4 = 75
