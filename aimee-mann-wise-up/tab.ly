@@ -53,6 +53,9 @@ bBarYoureSure = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
 tTheresACure = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8   }
 bTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
 
+tBarTilYouWiseUpFour = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>8 <a\3>8 r8 <c'\2>8 }
+bBarTilYouWiseUpFour = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
+
 %-----------------------------------------------------------------------
 
 tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
@@ -73,6 +76,9 @@ bChorusTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUp \bBarIntro \bBarIntr
 tLineThree = { \tBarYoureSure \tTheresACure \tBarWhenYouFirst \tBarBeganIt \break }
 bLineThree = { \bBarYoureSure \bTheresACure \bBarWhenYouFirst \bBarBeganIt \break }
 
+tChorusFour = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUpFour \tBarIntro \tBarIntro \break }
+bChorusFour = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUpFour \bBarIntro \bBarIntro \break  }
+
 
 %-----------------------------------------------------------------------
 
@@ -85,6 +91,8 @@ treble = {
   \tChorusTwo
   \tLineThree
   \tLineTwo
+  \tChorusOne
+  \tChorusFour
 }
 
 bass = {
@@ -96,6 +104,8 @@ bass = {
   \bChorusTwo
   \bLineThree
   \bLineTwo
+  \bChorusOne
+  \bChorusFour
 }
 
 \score {
