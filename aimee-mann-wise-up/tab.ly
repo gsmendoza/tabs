@@ -110,6 +110,46 @@ tOutro = { \tBarOutro \tBarOutro \tBarOutro \tBarOutro \break }
 bOutro = { \bBarOutro \bBarOutro \bBarOutro \bBarOutro \break }
 
 %-----------------------------------------------------------------------
+% Chords
+
+cBarAm    = { r4-"Am" r r r }
+cBarAmC   = { r4-"Am" r r-"C" r }
+cBarBbF   = { r4-"Bb" r r-"F" r }
+cBarCCGE  = { r4-"C" r r-"G" r-"E" }
+cBarD     = { r4-"D" r r r }
+cBarFC    = { r4-"F" r r-"C" r }
+cBarFD    = { r4-"F" r r-"D" r }
+
+cIntro = {
+  \cBarFC \cBarFC \cBarFC \cBarFC
+}
+
+cVerse = {
+  \cBarFC \cBarFC \cBarAm \cBarFC
+  \cBarFC \cBarFC \cBarAm \cBarFD
+}
+
+cChorus = {
+  \cBarFD \cBarFD \cBarFD \cBarFD
+  \cBarCCGE \cBarBbF \cBarFC \cBarFC
+}
+
+cChorusThree = {
+  \cBarFD \cBarFD \cBarFD \cBarFD
+  \cBarCCGE \cBarBbF \cBarCCGE \cBarBbF
+  \cBarCCGE \cBarBbF \cBarCCGE \cBarBbF
+}
+
+cBridge = {
+  \cBarAm \cBarD
+}
+
+cOutro = {
+  \cIntro
+  \cBarAmC \cBarAmC \cBarAmC \cBarAmC
+}
+
+%-----------------------------------------------------------------------
 
 headings = {
   r1^"Intro"    r r r
@@ -120,6 +160,22 @@ headings = {
   r1^"Bridge"   r
   r1^"Chorus 3" r r r | r r r r | r r r r
   r1^"Outro"    r r r | r r r r
+}
+
+chordHeadings = {
+  \cIntro
+
+  \cVerse
+  \cChorus
+
+  \cVerse
+  \cChorus
+
+  \cBridge
+
+  \cChorusThree
+
+  \cOutro
 }
 
 treble = {
@@ -195,6 +251,10 @@ bass = {
     >>
 
     \new TabStaff <<
+      \new TabVoice {
+        \chordHeadings
+      }
+
       \new TabVoice {
         \slurUp
         \treble
