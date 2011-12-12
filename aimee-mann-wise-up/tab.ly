@@ -111,8 +111,20 @@ bOutro = { \bBarOutro \bBarOutro \bBarOutro \bBarOutro \break }
 
 %-----------------------------------------------------------------------
 
+headings = {
+  r1^"Intro"    r r r
+  r1^"Verse 1"  r r r | r r r r
+  r1^"Chorus 1" r r r | r r r r
+  r1^"Verse 2"  r r r | r r r r
+  r1^"Chorus 2" r r r | r r r r
+  r1^"Bridge"   r
+  r1^"Chorus 3" r r r | r r r r | r r r r
+  r1^"Outro"    r r r | r r r r
+}
+
 treble = {
   \transposition d''
+
   \tIntro
 
   \tVerseOneLineOne
@@ -168,6 +180,10 @@ bass = {
     \new Staff <<
       \tempo 4 = 75
       \clef "treble_8"
+      \new Voice \with { \remove Rest_engraver } {
+        \headings
+      }
+
       \new Voice {
         \voiceOne
         \treble
