@@ -6,9 +6,10 @@
 }
 
 \header {
-  title = "Aimee Mann - Wise Up"
-  composer = "Tabbed by George Mendoza"
-  instrument = "Capo on second fret"
+  title = "Wise Up"
+  composer = "Aimee Mann"
+  arranger = "Tabbed by George Mendoza"
+  instrument = "Guitar (capo on second fret)"
 }
 
 %-----------------------------------------------------------------------
@@ -46,6 +47,12 @@ bBarItsNotGoingToStopCCGE = { <c\5>4 <c\5>4 <g,\6>4 <e,\6>4  }
 tBarTilYouWiseUp = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>4 <a\3>4   }
 bBarTilYouWiseUp = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
 
+tBarYoureSure = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <e'\1>8  }
+bBarYoureSure = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
+
+tTheresACure = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8   }
+bTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
+
 %-----------------------------------------------------------------------
 
 tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
@@ -63,6 +70,8 @@ bChorusOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bBarFDm  
 tChorusTwo = { \tBarItsNotGoingToStopCCGE \tBarTilYouWiseUp \tBarIntro \tBarIntro \break }
 bChorusTwo = { \bBarItsNotGoingToStopCCGE \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
 
+tLineThree = { \tBarYoureSure \tTheresACure \tBarWhenYouFirst \tBarBeganIt \break }
+bLineThree = { \bBarYoureSure \bTheresACure \bBarWhenYouFirst \bBarBeganIt \break }
 
 
 %-----------------------------------------------------------------------
@@ -74,6 +83,8 @@ treble = {
   \tLineTwo
   \tChorusOne
   \tChorusTwo
+  \tLineThree
+  \tLineTwo
 }
 
 bass = {
@@ -83,6 +94,8 @@ bass = {
   \bLineTwo
   \bChorusOne
   \bChorusTwo
+  \bLineThree
+  \bLineTwo
 }
 
 \score {
@@ -119,6 +132,9 @@ bass = {
     }
     \context { \TabStaff
       \override TimeSignature #'style = #'numbered
+    }
+    \context { \Voice
+      \remove Slur_engraver
     }
     \context { \TabVoice
       \remove Dots_engraver
