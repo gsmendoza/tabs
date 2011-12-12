@@ -9,20 +9,23 @@
 
 %-----------------------------------------------------------------------
 
-tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 \skip 8 }
-bBarIntro = { <f\4>4 <f\4>4 <c\5>4  <e\4>8 <g\3>8  }
+tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarIntro = { <f\4>4 <f\4>4 <c\5>4  <e\4>4  }
 
-tBarYouveGot = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
-bBarYouveGot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+tBarItsNot = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
+bBarItsNot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 
-tBarWhatYouWant = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
-bBarWhatYouWant = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+tBarWhatYouThought = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarWhatYouThought = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 
 tBarWhenYouFirst = { <e'\1>8 <d'\2>16( <c'\2>8) <a\3>8. <c'\2>4 <a\3>8 <c'\2>8 }
 bBarWhenYouFirst = { <a,\5>4 <a,\5>8 <e\4>4 <a,\5>4 \skip 8  }
 
 tBarBeganIt = { \skip 4 <a\3 c'\2 >8 <g\3>8 \skip 4 <g\3 c'\2 >8 <g\3>8  }
 bBarBeganIt = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
+
+tBarYouGot = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
+bBarYouGot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
 
 tBarEndItThough = { r8 <d'\2>16( <c'\2>16) r8 <a\3>16 <c'\2>16 r8 <d'\2>16( <c'\2>16) r8 <a\3>8 }
 bBarEndItThough = { <f\4>4 <f\4>4 <d\4>4 <d\4>4 }
@@ -32,11 +35,11 @@ bBarEndItThough = { <f\4>4 <f\4>4 <d\4>4 <d\4>4 }
 tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro  \break }
 bIntro = { \bBarIntro \bBarIntro \bBarIntro \bBarIntro  \break }
 
-tLineOne = { \tBarYouveGot \tBarWhatYouWant \tBarWhenYouFirst \tBarBeganIt  \break }
-bLineOne = { \bBarYouveGot \bBarWhatYouWant \bBarWhenYouFirst \bBarBeganIt  \break }
+tLineOne = { \tBarItsNot \tBarWhatYouThought \tBarWhenYouFirst \tBarBeganIt  \break }
+bLineOne = { \bBarItsNot \bBarWhatYouThought \bBarWhenYouFirst \bBarBeganIt  \break }
 
-tLineTwo = { \tBarYouveGot \tBarWhatYouWant \tBarWhenYouFirst \tBarEndItThough  \break }
-bLineTwo = { \bBarYouveGot \bBarWhatYouWant \bBarWhenYouFirst \bBarEndItThough  \break }
+tLineTwo = { \tBarYouGot \tBarWhatYouThought \tBarWhenYouFirst \tBarEndItThough  \break }
+bLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough  \break }
 
 %-----------------------------------------------------------------------
 
