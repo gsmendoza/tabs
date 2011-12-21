@@ -13,103 +13,6 @@
 }
 
 %-----------------------------------------------------------------------
-
-tBarBeforeYouSign = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <g\3>8  }
-bBarBeforeYouSign = { <d\4>4 <d\4>4 <d\4>4 <d\4>4 }
-
-tBarBeganIt = { \skip 4 <a\3 c'\2 >8 <g\3>8 \skip 4 <g\3 c'\2 >8 <g\3>8  }
-bBarBeganIt = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
-
-tBarEndItThough = { r8 <d'\2>16( <c'\2>16) r8 <a\3>16 <c'\2>16 r8 <d'\2>16( <c'\2>16) r8 <a\3>8 }
-bBarEndItThough = { <f\4>4 <f\4>4 <d\4>4 <d\4>4 }
-
-tBarFDm = { r8 <a\3>8 <c'\2>8 <a\3>8 r8 <d'\2>8 <a\3>8 <e'\1>8 }
-bBarFDm = { <f\4>4 <f\4>4 <d\4>2 }
-
-tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
-bBarIntro = { <f\4>4 <f\4>4 <c\5>4  <e\4>4  }
-
-tBarItsNot = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
-bBarItsNot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
-
-tBarItsNotGoingToStop = { <g'\1>8 <a\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <e'\2>4 <d'\2>16( <c'\2>16)  }
-bBarItsNotGoingToStop = { <f\4>4 <f\4>4 <d\4>4 <d\4>4  }
-
-tBarItsNotGoingToStopCcge = { <g'\1>8 <g\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <d'\2>4 <c'\2>8  }
-bBarItsNotGoingToStopCcge = { <c\5>4 <c\5>4 <g,\6>4 <e,\6>4  }
-
-tBarItsNotGoingToStopCcgeTwo = { r8 <g\3>8 <e'\1>8 <g'\1>8 r8 <d'\2>4 <c'\2>8   }
-bBarItsNotGoingToStopCcgeTwo = { <c\5>4 <e\4>4 <g,\6>4 <e,\6>4  }
-
-tBarOutro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
-bBarOutro = { <a,\5>4 <a,\5>4 <c\5>4  <c\5>4  }
-
-tBarPrepareAList = { <e'\1>8 <d'\2>16( <c'\2>8.) <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <a\3>16 <e'\1>16 }
-bBarPrepareAList = { <a,\5>4 <a,\5>4 <a,\5>4 <a,\5>4 }
-
-tBarSoJustGiveUp = { r8 <g\3>8 <c'\2>8 <a\3>8 <a\3 c'\2 g'\1 f\4 >4 <c'\3 e'\2 a'\1 >4  }
-bBarSoJustGiveUp = { <as,\5>4 <d\4>4 \skip 2  }
-
-tBarTheresACure = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8   }
-bBarTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
-
-tBarTilYouWiseUp = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>4 <a\3>4   }
-bBarTilYouWiseUp = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
-
-tBarTilYouWiseUpTwo = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>8 <a\3>8 r8 <c'\2>8 }
-bBarTilYouWiseUpTwo = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
-
-tBarTilYouWiseUpThree = { r8 <g\3>8 <c'\2>8 <a\3>8 <d'\2>8 <e'\1>8 r8 <e'\1>8    }
-bBarTilYouWiseUpThree = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4  }
-
-tBarWhatYouThought = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
-bBarWhatYouThought = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
-
-tBarWhenYouFirst = { <e'\1>8 <d'\2>16( <c'\2>8) <a\3>8. <c'\2>4 <a\3>8 <c'\2>8 }
-bBarWhenYouFirst = { <a,\5>4 <a,\5>8 <e\4>4 <a,\5>4 \skip 8  }
-
-tBarYouGot = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
-bBarYouGot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
-
-tBarYoureSure = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <e'\1>8  }
-bBarYoureSure = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
-
-%-----------------------------------------------------------------------
-
-tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
-bIntro = { \bBarIntro \bBarIntro \bBarIntro \bBarIntro \break }
-
-tVerseOneLineOne = { \tBarItsNot \tBarWhatYouThought \tBarWhenYouFirst \tBarBeganIt \break }
-bVerseOneLineOne = { \bBarItsNot \bBarWhatYouThought \bBarWhenYouFirst \bBarBeganIt \break }
-
-tVerseOneLineTwo = { \tBarYouGot \tBarWhatYouThought \tBarWhenYouFirst \tBarEndItThough \break }
-bVerseOneLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough \break }
-
-tVerseTwoLineOne = { \tBarYoureSure \tBarTheresACure \tBarWhenYouFirst \tBarBeganIt \break }
-bVerseTwoLineOne = { \bBarYoureSure \bBarTheresACure \bBarWhenYouFirst \bBarBeganIt \break }
-
-tChorusOneLineOne = { \tBarItsNotGoingToStop \tBarFDm \tBarItsNotGoingToStop \tBarFDm  \break }
-bChorusOneLineOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bBarFDm  \break }
-
-tChorusOneLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUp \tBarIntro \tBarIntro \break }
-bChorusOneLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
-
-tChorusTwoLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUpTwo \tBarIntro \tBarIntro \break }
-bChorusTwoLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUpTwo \bBarIntro \bBarIntro \break }
-
-tChorusThreeLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUpThree \tBarItsNotGoingToStopCcgeTwo \tBarTilYouWiseUpThree \break }
-bChorusThreeLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUpThree \bBarItsNotGoingToStopCcgeTwo \bBarTilYouWiseUpThree \break }
-
-tChorusThreeLineThree = { \tBarItsNotGoingToStopCcgeTwo \tBarTilYouWiseUpThree \tBarItsNotGoingToStopCcgeTwo \tBarSoJustGiveUp \break }
-bChorusThreeLineThree = { \bBarItsNotGoingToStopCcgeTwo \bBarTilYouWiseUpThree \bBarItsNotGoingToStopCcgeTwo \bBarSoJustGiveUp \break }
-
-tBridge = { \tBarPrepareAList \tBarBeforeYouSign \break }
-bBridge = { \bBarPrepareAList \bBarBeforeYouSign \break }
-
-tOutro = { \tBarOutro \tBarOutro \tBarOutro \tBarOutro \break }
-bOutro = { \bBarOutro \bBarOutro \bBarOutro \bBarOutro \break }
-
-%-----------------------------------------------------------------------
 % Chords
 
 cBarAm    = { r4-"Am" r r r }
@@ -120,34 +23,133 @@ cBarD     = { r4-"D" r r r }
 cBarFC    = { r4-"F" r r-"C" r }
 cBarFD    = { r4-"F" r r-"D" r }
 
-cIntro = {
-  \cBarFC \cBarFC \cBarFC \cBarFC
-}
+%-----------------------------------------------------------------------
 
-cVerse = {
-  \cBarFC \cBarFC \cBarAm \cBarFC
-  \cBarFC \cBarFC \cBarAm \cBarFD
-}
+tBarBeforeYouSign = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <g\3>8  }
+bBarBeforeYouSign = { <d\4>4 <d\4>4 <d\4>4 <d\4>4 }
+cBarBeforeYouSign = \cBarAm
 
-cChorus = {
-  \cBarFD \cBarFD \cBarFD \cBarFD
-  \cBarCCGE \cBarBbF \cBarFC \cBarFC
-}
+tBarBeganIt = { \skip 4 <a\3 c'\2 >8 <g\3>8 \skip 4 <g\3 c'\2 >8 <g\3>8  }
+bBarBeganIt = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
+cBarBeganIt = \cBarFC
 
-cChorusThree = {
-  \cBarFD \cBarFD \cBarFD \cBarFD
-  \cBarCCGE \cBarBbF \cBarCCGE \cBarBbF
-  \cBarCCGE \cBarBbF \cBarCCGE \cBarBbF
-}
+tBarEndItThough = { r8 <d'\2>16( <c'\2>16) r8 <a\3>16 <c'\2>16 r8 <d'\2>16( <c'\2>16) r8 <a\3>8 }
+bBarEndItThough = { <f\4>4 <f\4>4 <d\4>4 <d\4>4 }
+cBarEndItThough = \cBarFD
 
-cBridge = {
-  \cBarAm \cBarD
-}
+tBarFDm = { r8 <a\3>8 <c'\2>8 <a\3>8 r8 <d'\2>8 <a\3>8 <e'\1>8 }
+bBarFDm = { <f\4>4 <f\4>4 <d\4>2 }
+cBarFDm = \cBarFD
 
-cOutro = {
-  \cIntro
-  \cBarAmC \cBarAmC \cBarAmC \cBarAmC
-}
+tBarIntro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarIntro = { <f\4>4 <f\4>4 <c\5>4  <e\4>4  }
+cBarIntro = \cBarFC
+
+tBarItsNot = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
+bBarItsNot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+cBarItsNot = \cBarFC
+
+tBarItsNotGoingToStop = { <g'\1>8 <a\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <e'\2>4 <d'\2>16( <c'\2>16)  }
+bBarItsNotGoingToStop = { <f\4>4 <f\4>4 <d\4>4 <d\4>4  }
+cBarItsNotGoingToStop = \cBarFD
+
+tBarItsNotGoingToStopCcge = { <g'\1>8 <g\3>8 <g'\1>16 <g'\1>16\glissando <a'\1>4 <d'\2>4 <c'\2>8  }
+bBarItsNotGoingToStopCcge = { <c\5>4 <c\5>4 <g,\6>4 <e,\6>4  }
+cBarItsNotGoingToStopCcge = \cBarCCGE
+
+tBarItsNotGoingToStopCcgeTwo = { r8 <g\3>8 <e'\1>8 <g'\1>8 r8 <d'\2>4 <c'\2>8   }
+bBarItsNotGoingToStopCcgeTwo = { <c\5>4 <e\4>4 <g,\6>4 <e,\6>4  }
+cBarItsNotGoingToStopCcgeTwo = \cBarCCGE
+
+tBarOutro = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarOutro = { <a,\5>4 <a,\5>4 <c\5>4  <c\5>4  }
+cBarOutro = \cBarAmC
+
+tBarPrepareAList = { <e'\1>8 <d'\2>16( <c'\2>8.) <a\3>16 <c'\2>8. <d'\2>16 <e'\1>8. <a\3>16 <e'\1>16 }
+bBarPrepareAList = { <a,\5>4 <a,\5>4 <a,\5>4 <a,\5>4 }
+cBarPrepareAList = \cBarAm
+
+tBarSoJustGiveUp = { r8 <g\3>8 <c'\2>8 <a\3>8 <a\3 c'\2 g'\1 f\4 >4 <c'\3 e'\2 a'\1 >4  }
+bBarSoJustGiveUp = { <as,\5>4 <d\4>4 \skip 2  }
+cBarSoJustGiveUp = \cBarBbF
+
+tBarTheresACure = { r8 <d'\2>16( <c'\2>8.) <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8   }
+bBarTheresACure = { <f\4>4 <f\4>4 <c\5>4 <c\5>4  }
+cBarTheresACure = \cBarFC
+
+tBarTilYouWiseUp = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>4 <a\3>4   }
+bBarTilYouWiseUp = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
+cBarTilYouWiseUp = \cBarBbF
+
+tBarTilYouWiseUpTwo = { r8 <g\3>8 <c'\2>8 <g\3>8 <d'\2>8 <a\3>8 r8 <c'\2>8 }
+bBarTilYouWiseUpTwo = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4   }
+cBarTilYouWiseUpTwo = \cBarBbF
+
+tBarTilYouWiseUpThree = { r8 <g\3>8 <c'\2>8 <a\3>8 <d'\2>8 <e'\1>8 r8 <e'\1>8    }
+bBarTilYouWiseUpThree = { <as,\5>4 <d\4>4 <f\4>4 <f\4>4  }
+cBarTilYouWiseUpThree = \cBarBbF
+
+tBarWhatYouThought = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>8 }
+bBarWhatYouThought = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+cBarWhatYouThought = \cBarFC
+
+tBarWhenYouFirst = { <e'\1>8 <d'\2>16( <c'\2>8) <a\3>8. <c'\2>4 <a\3>8 <c'\2>8 }
+bBarWhenYouFirst = { <a,\5>4 <a,\5>8 <e\4>4 <a,\5>4 \skip 8  }
+cBarWhenYouFirst = \cBarAm
+
+tBarYouGot = { <g'\1>8 <a\3>8 <g'\1>8 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <g\3>16( <a\3>16) }
+bBarYouGot = { <f\4>4 <f\4>4 <c\5>4 <e\4>4  }
+cBarYouGot = \cBarFC
+
+tBarYoureSure = { r8 <g'\1>4 <a\3>16 <g'\1>8 <g\3>16 <e'\1>4 <e'\1>8  }
+bBarYoureSure = { <f\4>4 <f\4>4 <c\5>4 <e\4>4 }
+cBarYoureSure = \cBarFC
+
+%-----------------------------------------------------------------------
+
+tIntro = { \tBarIntro \tBarIntro \tBarIntro \tBarIntro \break }
+bIntro = { \bBarIntro \bBarIntro \bBarIntro \bBarIntro \break }
+cIntro = { \cBarIntro \cBarIntro \cBarIntro \cBarIntro \break }
+
+tVerseOneLineOne = { \tBarItsNot \tBarWhatYouThought \tBarWhenYouFirst \tBarBeganIt \break }
+bVerseOneLineOne = { \bBarItsNot \bBarWhatYouThought \bBarWhenYouFirst \bBarBeganIt \break }
+cVerseOneLineOne = { \cBarItsNot \cBarWhatYouThought \cBarWhenYouFirst \cBarBeganIt \break }
+
+tVerseOneLineTwo = { \tBarYouGot \tBarWhatYouThought \tBarWhenYouFirst \tBarEndItThough \break }
+bVerseOneLineTwo = { \bBarYouGot \bBarWhatYouThought \bBarWhenYouFirst \bBarEndItThough \break }
+cVerseOneLineTwo = { \cBarYouGot \cBarWhatYouThought \cBarWhenYouFirst \cBarEndItThough \break }
+
+tVerseTwoLineOne = { \tBarYoureSure \tBarTheresACure \tBarWhenYouFirst \tBarBeganIt \break }
+bVerseTwoLineOne = { \bBarYoureSure \bBarTheresACure \bBarWhenYouFirst \bBarBeganIt \break }
+cVerseTwoLineOne = { \cBarYoureSure \cBarTheresACure \cBarWhenYouFirst \cBarBeganIt \break }
+
+tChorusOneLineOne = { \tBarItsNotGoingToStop \tBarFDm \tBarItsNotGoingToStop \tBarFDm  \break }
+bChorusOneLineOne = { \bBarItsNotGoingToStop \bBarFDm \bBarItsNotGoingToStop \bBarFDm  \break }
+cChorusOneLineOne = { \cBarItsNotGoingToStop \cBarFDm \cBarItsNotGoingToStop \cBarFDm  \break }
+
+tChorusOneLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUp \tBarIntro \tBarIntro \break }
+bChorusOneLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUp \bBarIntro \bBarIntro \break  }
+cChorusOneLineTwo = { \cBarItsNotGoingToStopCcge \cBarTilYouWiseUp \cBarIntro \cBarIntro \break  }
+
+tChorusTwoLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUpTwo \tBarIntro \tBarIntro \break }
+bChorusTwoLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUpTwo \bBarIntro \bBarIntro \break }
+cChorusTwoLineTwo = { \cBarItsNotGoingToStopCcge \cBarTilYouWiseUpTwo \cBarIntro \cBarIntro \break }
+
+tChorusThreeLineTwo = { \tBarItsNotGoingToStopCcge \tBarTilYouWiseUpThree \tBarItsNotGoingToStopCcgeTwo \tBarTilYouWiseUpThree \break }
+bChorusThreeLineTwo = { \bBarItsNotGoingToStopCcge \bBarTilYouWiseUpThree \bBarItsNotGoingToStopCcgeTwo \bBarTilYouWiseUpThree \break }
+cChorusThreeLineTwo = { \cBarItsNotGoingToStopCcge \cBarTilYouWiseUpThree \cBarItsNotGoingToStopCcgeTwo \cBarTilYouWiseUpThree \break }
+
+tChorusThreeLineThree = { \tBarItsNotGoingToStopCcgeTwo \tBarTilYouWiseUpThree \tBarItsNotGoingToStopCcgeTwo \tBarSoJustGiveUp \break }
+bChorusThreeLineThree = { \bBarItsNotGoingToStopCcgeTwo \bBarTilYouWiseUpThree \bBarItsNotGoingToStopCcgeTwo \bBarSoJustGiveUp \break }
+cChorusThreeLineThree = { \cBarItsNotGoingToStopCcgeTwo \cBarTilYouWiseUpThree \cBarItsNotGoingToStopCcgeTwo \cBarSoJustGiveUp \break }
+
+tBridge = { \tBarPrepareAList \tBarBeforeYouSign \break }
+bBridge = { \bBarPrepareAList \bBarBeforeYouSign \break }
+cBridge = { \cBarPrepareAList \cBarBeforeYouSign \break }
+
+tOutro = { \tBarOutro \tBarOutro \tBarOutro \tBarOutro \break }
+bOutro = { \bBarOutro \bBarOutro \bBarOutro \bBarOutro \break }
+cOutro = { \cBarOutro \cBarOutro \cBarOutro \cBarOutro \break }
 
 %-----------------------------------------------------------------------
 
@@ -162,19 +164,30 @@ headings = {
   r1^"Outro"    r r r | r r r r
 }
 
+%-----------------------------------------------------------------------
+
 chordHeadings = {
   \cIntro
 
-  \cVerse
-  \cChorus
+  \cVerseOneLineOne
+  \cVerseOneLineTwo
 
-  \cVerse
-  \cChorus
+  \cChorusOneLineOne
+  \cChorusOneLineTwo
+
+  \cVerseTwoLineOne
+  \cVerseOneLineTwo
+
+  \cChorusOneLineOne
+  \cChorusTwoLineTwo
 
   \cBridge
 
-  \cChorusThree
+  \cChorusOneLineOne
+  \cChorusThreeLineTwo
+  \cChorusThreeLineThree
 
+  \cIntro
   \cOutro
 }
 
@@ -285,7 +298,7 @@ bass = {
   }
 }
 
-% showLastLength = R1*4 % Enable to play only last two measures
+% showLastLength = R1*4
 \score {
   \new Staff \with {midiInstrument = #"acoustic guitar (nylon)"} <<
     \tempo 4 = 75
